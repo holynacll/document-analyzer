@@ -1268,8 +1268,16 @@ dependencies = [
     { name = "pydantic-ai", extra = ["examples", "logfire"] },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "ruff" },
+]
+
 [package.metadata]
 requires-dist = [{ name = "pydantic-ai", extras = ["examples", "logfire"], specifier = ">=0.0.39" }]
+
+[package.metadata.requires-dev]
+dev = [{ name = "ruff", specifier = ">=0.10.0" }]
 
 [[package]]
 name = "pydantic-core"
